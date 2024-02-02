@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Main</title>
+
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевики">
+    <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+	
+	
+    <script>
+        const totalFontSize = function() {
+            const pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;  
+            
+            if (pageWidth > 2000) {
+                document.documentElement.style.fontSize = '14px';
+            }else if (pageWidth > 992) {
+                let value = (pageWidth * 10 / 1920).toFixed(2);
+                document.documentElement.style.fontSize = value + 'px';
+            } else {
+                document.documentElement.style.fontSize = '10px';
+            }
+        };
+
+        totalFontSize();
+		
+		window.addEventListener('resize', totalFontSize);
+		
+    </script>
+    	
+	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240202145611"> 
+	
+	<link rel="stylesheet" href="css/style.min.css?_v=20240202145611">
+
+
+
+</head>
+
+<body >
+
+  
+
+  <header class="header">
+  <div class="header__wrap">
+    <div class="header__logo">
+      EVER SKY
+    </div>
+    <nav class="header__nav">
+      <a data-fancybox data-src="#about_us" class="header__link">About us</a>
+    </nav>
+  </div>
+</header>
+  <div class="modal" id="about_us">
+  <div class="modal__wrap">
+    <h2 class="modal__title">Company Name: Ever Sky PTE. LTD</h2>
+    <div class="modal__requisites">
+      <p>EVER SKY PTE. LTD.</p>
+      <p>150 SOUTH BRIDGE ROAD #02-06 FOOK HAI BUILDING</p>
+      <p>SINGAPORE</p>
+      <p>COMMUNITY FEDERAL SAVINGS BANK</p>
+      <p>SWIFT Code - CMFGUS33</p>
+      <p>Account USD - 8313635187</p>
+    </div>
+    <h3 class="modal__director">Director - YU HONGJI</h3>
+  </div>
+</div>
+
+
+  <main>
+
+    <section class="hero">
+  <div class="hero__img">
+    <picture><source srcset="img/hero.webp" type="image/webp"><img src="img/hero.jpg" alt="" loading="lazy" class="img-full"></picture>
+  </div>
+</section>
+    <section class="category">
+  <div class="category__container">
+    <div class="category__wrap" id="raw_tabs">
+      <ul class="category__tabs skltbs-tab-group">
+        <li class="skltbs-tab-item">
+          <button class="skltbs-tab">Timber</button>
+        </li>
+        <li class="skltbs-tab-item">
+          <button class="skltbs-tab">Agricultural Products</button>
+        </li>
+        <li class="skltbs-tab-item">
+          <button class="skltbs-tab">Industrial Goods</button>
+        </li>
+        <li class="skltbs-tab-item">
+          <button class="skltbs-tab">Trade Network</button>
+        </li>
+        <li class="skltbs-tab-item">
+          <button class="skltbs-tab">Technologies and Electronics</button>
+        </li>
+      </ul>
+      <div class="category__body skltbs-panel-group">
+        <div class="skltbs-panel">
+          <div class="category__item">
+            <div class="category-item__body">
+              <h4 class="category-item__title">Hardwood:</h4>
+              <p class="category-item__text">
+                durable and long-lasting, used for furniture, flooring, and construction.
+              </p>
+            </div>
+            <div class="category-item__image">
+              <picture><source srcset="img/hardwood.webp" type="image/webp"><img src="img/hardwood.jpg" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category-item__body">
+              <h4 class="category-item__title">Softwood:</h4>
+              <p class="category-item__text">
+                lighter and more affordable, used for construction, framing, and cellulose production.
+              </p>
+            </div>
+            <div class="category-item__image">
+              <picture><source srcset="img/softwood.webp" type="image/webp"><img src="img/softwood.jpg" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category-item__body">
+              <h4 class="category-item__title">Wood Processing Products:</h4>
+              <p class="category-item__text">
+                plywood, MDF, OSB, offer strength and versatility for various applications.
+              </p>
+            </div>
+            <div class="category-item__image">
+              <picture><source srcset="img/processing-wood.webp" type="image/webp"><img src="img/processing-wood.jpg" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+        </div>
+        <div class="skltbs-panel">
+          <div class="category__item">
+            <div class="category-item__body">
+              <h4 class="category-item__title">Grains:</h4>
+              <p class="category-item__text">
+                wheat, corn, rice, soy, are essential food products for both humans and animals.
+              </p>
+            </div>
+            <div class="category-item__image">
+              <picture><source srcset="img/grains.webp" type="image/webp"><img src="img/grains.jpg" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category-item__body">
+              <h4 class="category-item__title">Oilseeds:</h4>
+              <p class="category-item__text">
+                sunflower, rapeseed, soy, used for the production of vegetable oils and biofuels.
+              </p>
+            </div>
+            <div class="category-item__image">
+              <picture><source srcset="img/oilseeds.webp" type="image/webp"><img src="img/oilseeds.jpg" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category-item__body">
+              <h4 class="category-item__title">Livestock Products:</h4>
+              <p class="category-item__text">meat, milk, eggs, hides, have high value in the global market.</p>
+            </div>
+            <div class="category-item__image">
+              <picture><source srcset="img/livestock.webp" type="image/webp"><img src="img/livestock.jpg" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+        </div>
+        <div class="skltbs-panel">
+          <div class="category__item">
+            <div class="category-item__body">
+              <h4 class="category-item__title">Chemical Substances:</h4>
+              <p class="category-item__text">
+                used in various industries such as plastics, fertilizers, and pharmaceuticals.
+              </p>
+            </div>
+            <div class="category-item__image">
+              <picture><source srcset="img/chemical.webp" type="image/webp"><img src="img/chemical.jpg" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category-item__body">
+              <h4 class="category-item__title">Textiles:</h4>
+              <p class="category-item__text">
+                cotton, wool, synthetic fibers, used for the production of clothing, footwear, and furniture.
+              </p>
+            </div>
+            <div class="category-item__image">
+              <picture><source srcset="img/textiles.webp" type="image/webp"><img src="img/textiles.jpg" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category-item__body">
+              <h4 class="category-item__title">Energy Resources:</h4>
+              <p class="category-item__text">gas, coal, are vital for the global economy.</p>
+            </div>
+            <div class="category-item__image">
+              <picture><source srcset="img/energy.webp" type="image/webp"><img src="img/energy.jpg" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+        </div>
+        <div class="skltbs-panel">
+          <div class="category__item">
+            <div class="category-item__body">
+              <p class="category-item__text">
+                Thanks to our extensive network of suppliers and buyers, we ensure efficient and reliable trade in
+                goods, meeting the specific requirements of our clients.
+              </p>
+            </div>
+            <div class="category-item__image">
+              <picture><source srcset="img/trade-network.webp" type="image/webp"><img src="img/trade-network.jpg" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+        </div>
+        <div class="skltbs-panel">
+          <div class="category__item">
+            <div class="category-item__body">
+              <h4 class="category-item__title">Electronics Trade:</h4>
+              <p class="category-item__text">we offer a wide range of high-tech products.</p>
+            </div>
+            <div class="category-item__image">
+              <picture><source srcset="img/trade.webp" type="image/webp"><img src="img/trade.jpg" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category-item__body">
+              <h4 class="category-item__title">Robotics</h4>
+              <p class="category-item__text">we implement modern solutions in robotics and automation.</p>
+            </div>
+            <div class="category-item__image">
+              <picture><source srcset="img/robotics.webp" type="image/webp"><img src="img/robotics.jpg" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+          <div class="category__item">
+            <div class="category-item__body">
+              <h4 class="category-item__title">Technical Maintenance of Electronic Systems:</h4>
+              <p class="category-item__text">we ensure the reliable functioning of electronic devices.</p>
+            </div>
+            <div class="category-item__image">
+              <picture><source srcset="img/maintenance.webp" type="image/webp"><img src="img/maintenance.jpg" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="picture">
+  <picture><source srcset="img/big-picture.webp" type="image/webp"><img src="img/big-picture.jpg" alt="" loading="lazy" class="img-full" /></picture>
+</section>
+
+    <section class="section">
+  <div class="section__container">
+    <h2 class="section__title">Contact us today</h2>
+    <p class="section__p">to learn more about our services in trading goods, as well as the technological and electronic solutions we offer.</p>
+    <form action="#" class="section__form form">
+      <input type="text" class="form__input" name="fname" placeholder="First Name" required>
+      <input type="text" class="form__input" name="fname" placeholder="Last Name" required>
+      <input type="email" class="form__input" name="fname" placeholder="Email" required>
+      <input type="text" class="form__input" name="fname" placeholder="Company" required>
+      <button type="submit" class="form__submit">Send</button>
+    </form>
+  </div>
+</section>
+   
+  </main>
+
+  <!-- END main page -->
+<!-- 
+  <footer class="footer">
+    <div class="md">
+      <div class="footer__wrap">
+        
+    </div>
+</footer> -->
+  
+  
+  <script src="js/plugins/plugins.min.js?_v=20240202145611"></script>
+
+<script src="js/app.min.js?_v=20240202145611"></script>
+ 
+</body>
+
+</html>
